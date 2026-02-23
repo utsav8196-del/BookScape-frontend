@@ -28,8 +28,8 @@ function Login() {
     setError('');
 
     try {
-      console.log('Sending login request to:', 'http://localhost:5000/api/login'); // Debug log
-      const response = await fetch('http://localhost:5000/api/login', {
+      console.log('Sending login request to:', 'https://book-scape-backend.vercel.app/api/login'); // Debug log
+      const response = await fetch('https://book-scape-backend.vercel.app/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

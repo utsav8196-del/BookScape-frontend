@@ -24,7 +24,7 @@ function Contact() {
   }
 
   try {
-    const res = await fetch('http://localhost:5000/api/contact', {
+    const res = await fetch('https://book-scape-backend.vercel.app/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form)

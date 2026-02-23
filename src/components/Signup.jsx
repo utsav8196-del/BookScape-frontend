@@ -37,8 +37,8 @@ function Signup() {
     }
 
     try {
-      console.log('Sending request to:', 'http://localhost:5000/api/signup'); // Debug log
-      const response = await fetch('http://localhost:5000/api/signup', {
+      console.log('Sending request to:', 'https://book-scape-backend.vercel.app/api/signup'); // Debug log
+      const response = await fetch('https://book-scape-backend.vercel.app/api/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

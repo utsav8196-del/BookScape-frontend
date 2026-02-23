@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
 const ROOM_RATES = {
@@ -184,11 +184,11 @@ function BookingForm() {
       // Calculate total amount
       const nights = getNights(form.checkin, form.checkout);
       const subtotal = nights * form.guests;
-      const gst = subtotal * 0.18;
+      const gst = subtotal * 0.18;       
       const total = subtotal + gst;
 
       // Save booking to database
-      const response = await fetch('http://localhost:5000/api/booking', {
+      const response = await fetch('https://book-scape-backend.vercel.app/api/booking', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
